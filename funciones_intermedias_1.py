@@ -2,46 +2,53 @@
 # Actualización de estructuras
 # ================================
 
-# 1. Actualizar valores en diccionarios y listas
+# 1.1 Actualizar valor en matriz
+def actualizar_matriz():
+    matriz = [[10, 15, 20], [3, 7, 14]]
+    matriz[1][0] = 6
+    print("=== 1.1 MATRIZ ACTUALIZADA ===")
+    print(matriz)
+    print()
 
-matriz = [[10, 15, 20], [3, 7, 14]]
-matriz[1][0] = 6  # Cambia el 3 por 6
+actualizar_matriz()
 
-print("=== 1.1 MATRIZ ACTUALIZADA ===")
-print(matriz)
-print()  # línea en blanco para separar secciones
+# 1.2 Actualizar nombre de un cantante
+def actualizar_cantantes():
+    cantantes = [
+        {"nombre": "Ricky Martin", "pais": "Puerto Rico"},
+        {"nombre": "Chayanne", "pais": "Puerto Rico"}
+    ]
+    cantantes[0]["nombre"] = "Enrique Martin Morales"
+    print("=== 1.2 CANTANTES ACTUALIZADOS ===")
+    print(cantantes)
+    print()
 
-cantantes = [
-    {"nombre": "Ricky Martin", "pais": "Puerto Rico"},
-    {"nombre": "Chayanne", "pais": "Puerto Rico"}
-]
+actualizar_cantantes()
 
-cantantes[0]["nombre"] = "Enrique Martin Morales"  # Cambia el nombre del primer cantante
+# 1.3 Actualizar ciudad en diccionario
+def actualizar_ciudades():
+    ciudades = {
+        "México": ["Ciudad de México", "Guadalajara", "Cancún"],
+        "Chile": ["Santiago", "Concepción", "Viña del Mar"]
+    }
+    ciudades["México"][2] = "Monterrey"
+    print("=== 1.3 CIUDADES ACTUALIZADAS ===")
+    print(ciudades)
+    print()
 
-print("=== 1.2 CANTANTES ACTUALIZADOS ===")
-print(cantantes)
-print()  # línea en blanco para separar secciones
+actualizar_ciudades()
 
-ciudades = {
-    "México": ["Ciudad de México", "Guadalajara", "Cancún"],
-    "Chile": ["Santiago", "Concepción", "Viña del Mar"]
-}
+# 1.4 Actualizar coordenadas
+def actualizar_coordenadas():
+    coordenadas = [
+        {"latitud": 8.2588997, "longitud": -84.9399704}
+    ]
+    coordenadas[0]["latitud"] = 9.9355431
+    print("=== 1.4 COORDENADAS ACTUALIZADAS ===")
+    print(coordenadas)
+    print()
 
-ciudades["México"][2] = "Monterrey"  # Cambia "Cancún" por "Monterrey"
-
-print("=== 1.3 CIUDADES ACTUALIZADAS ===")
-print(ciudades)
-print()  # línea en blanco para separar secciones
-
-coordenadas = [
-    {"latitud": 8.2588997, "longitud": -84.9399704}
-]
-
-coordenadas[0]["latitud"] = 9.9355431  # Cambia la latitud
-
-print("=== 1.4 COORDENADAS ACTUALIZADAS ===")
-print(coordenadas)
-print()  # línea en blanco para separar secciones
+actualizar_coordenadas()
 
 # ================================
 # 2. Iterar a través de una lista de diccionarios
