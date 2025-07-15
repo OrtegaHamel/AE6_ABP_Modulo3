@@ -18,26 +18,34 @@ Se modifican valores dentro de estructuras de datos:
 
 Recibe una lista de diccionarios y recorre cada uno para imprimir sus llaves y valores en una sola línea por elemento.  
 Formato de salida esperado:
-nombre - Enrique Martin Morales, pais - Puerto Rico
+nombre - Ricky Martin, pais - Puerto Rico
 nombre - Chayanne, pais - Puerto Rico
+nombre - José José, pais - México
+nombre - Juan Luis Guerra, pais - República Dominicana
 
 ### 3. Función `iterar_diccionario2(llave, lista)`
 
 Recibe una llave y una lista de diccionarios. Imprime únicamente los valores asociados a esa llave en cada diccionario.  
+
 Ejemplo de uso:
 iterar_diccionario2("nombre", cantantes)
-Resultado:
-Enrique Martin Morales
+
+Resultado "nombre":
+Ricky Martin
 Chayanne
+José José
+Juan Luis Guerra
 
-4. Función imprimir_informacion(diccionario)
-Recorre un diccionario cuyas claves apuntan a listas. Para cada clave, muestra:
+Resultado "pais":
+Puerto Rico
+Puerto Rico
+México
+República Dominicana
 
-La cantidad de elementos en la lista.
+### 4. Función imprimir_informacion(diccionario)
 
-El nombre de la clave en mayúsculas.
-
-Los elementos de la lista, uno por línea.
+Recorre un diccionario cuyas claves apuntan a listas.
+La función imprime el nombre de cada clave junto con el tamaño de su lista y seguido de esto los valores de la lista para esa clave.
 
 Ejemplo de salida:
 
